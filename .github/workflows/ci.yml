@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    strategy:
+      matrix:
+        os: [macos-15, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Register tap
+        run: brew tap shell-is-all-you-need/tap "$GITHUB_WORKSPACE"
+      - name: Install formula
+        run: brew install shell-is-all-you-need/tap/shell-is-all-you-need
+      - name: Test formula
+        run: brew test shell-is-all-you-need/tap/shell-is-all-you-need
+      - name: Check command
+        run: shell-is-all-you-need --version
