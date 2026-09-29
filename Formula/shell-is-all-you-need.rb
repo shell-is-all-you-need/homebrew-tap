@@ -1,28 +1,28 @@
 class ShellIsAllYouNeed < Formula
   desc "Dependency-free multi-tool MCP server for fixed process invocations"
   homepage "https://shell-is-all-you-need.github.io/"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.1/shell-is-all-you-need-aarch64-apple-darwin", using: :nounzip
-      sha256 "4eb2b285334b9ec59b8ca4979d9857fbf9c49fc4f39789ae90984a5b13ac91bd"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-aarch64-apple-darwin", using: :nounzip
+      sha256 "26bb807315de911f0101a27a15661b829077259bd097d644a3694f447e2d9014"
     end
     on_intel do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.1/shell-is-all-you-need-x86_64-apple-darwin", using: :nounzip
-      sha256 "ace3eb6d014e0554c21e5f0e8829a59903b9ddb83dabb5316fae4ddd95eba940"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-x86_64-apple-darwin", using: :nounzip
+      sha256 "6131430e0ce457e58f2bc0b5a248302cc8c941894474a03d387cccc05f19adbd"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.1/shell-is-all-you-need-aarch64-unknown-linux-musl", using: :nounzip
-      sha256 "d771262cd3b01a2cc0410eecabc8a011948219107e6c4eeb3229dfd41104e30d"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-aarch64-unknown-linux-musl", using: :nounzip
+      sha256 "625abc4128c6da4b31994726686a7e1246f3c7b0022d29817204e9d0cb615f62"
     end
     on_intel do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.1/shell-is-all-you-need-x86_64-unknown-linux-musl", using: :nounzip
-      sha256 "be1061a186afa4cc52c9e4e5bebf0b06e3f6b9e61113e4248d8a210fb7bd2e94"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-x86_64-unknown-linux-musl", using: :nounzip
+      sha256 "661a291b1e5815af5b08dff5b4d584cc9852a996de73904709ea2ccf623220b0"
     end
   end
 
