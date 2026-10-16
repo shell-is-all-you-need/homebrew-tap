@@ -1,8 +1,12 @@
 class ShellIsAllYouNeed < Formula
   desc "Dependency-free multi-tool MCP server for fixed process invocations"
   homepage "https://shell-is-all-you-need.github.io/"
-  version "0.1.2"
   license "MIT"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do
@@ -33,5 +37,6 @@ class ShellIsAllYouNeed < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/shell-is-all-you-need --version")
+    assert_match "--tool", shell_output("#{bin}/shell-is-all-you-need --help")
   end
 end
