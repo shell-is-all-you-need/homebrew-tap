@@ -10,23 +10,23 @@ class ShellIsAllYouNeed < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-aarch64-apple-darwin", using: :nounzip
-      sha256 "26bb807315de911f0101a27a15661b829077259bd097d644a3694f447e2d9014"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.2.0/shell-is-all-you-need-aarch64-apple-darwin", using: :nounzip
+      sha256 "5e2ed484c6cb6907106aba92935d45e1c0fcabfe1ba1cc4fe1cf19c60fabeb0c"
     end
     on_intel do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-x86_64-apple-darwin", using: :nounzip
-      sha256 "6131430e0ce457e58f2bc0b5a248302cc8c941894474a03d387cccc05f19adbd"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.2.0/shell-is-all-you-need-x86_64-apple-darwin", using: :nounzip
+      sha256 "ff18e356f58f2f4e16673da87e67eeb62634bc4dc61ad1161b2ebc734ce1914d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-aarch64-unknown-linux-musl", using: :nounzip
-      sha256 "625abc4128c6da4b31994726686a7e1246f3c7b0022d29817204e9d0cb615f62"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.2.0/shell-is-all-you-need-aarch64-unknown-linux-musl", using: :nounzip
+      sha256 "dc2a88af87a935af2cd219480b5e73b946b4fbb49fe491628fa7777187abb1a0"
     end
     on_intel do
-      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.1.2/shell-is-all-you-need-x86_64-unknown-linux-musl", using: :nounzip
-      sha256 "661a291b1e5815af5b08dff5b4d584cc9852a996de73904709ea2ccf623220b0"
+      url "https://github.com/shell-is-all-you-need/mcp/releases/download/v0.2.0/shell-is-all-you-need-x86_64-unknown-linux-musl", using: :nounzip
+      sha256 "c7937703e7f9a781fe05b5b26b922e897e07b246f231b66f4f10f4d4528fb9ce"
     end
   end
 
